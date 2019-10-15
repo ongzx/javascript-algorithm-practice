@@ -5,7 +5,7 @@
  */
 function palingdromeChecker(aString) {
     
-    var stringArr = aString.split("");
+    var stringArr = aString.toLowerCase().replace(/\s/g, "").split("");
     var isPalingdrome = false;
     
     while(stringArr.length > 1) {
@@ -21,3 +21,5 @@ function palingdromeChecker(aString) {
     return isPalingdrome;
     
   }
+
+console.log(palingdromeChecker('race Car'));
